@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TGS Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+     <link href="main-css.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="main-js.js"></script>
+</head>
+
+<body>
+    <div id="cover"></div>
+    <form>
+        <input type="text" name="search" id="search" placeholder="Search by hotel name..">
+
+        <select id="brands"></select>
+        <button type="button" onclick="checkBrand()">Select</button>
+    </form>
+    <div id="hotels">
+        <table id="tblData" class="fullTable rwd-table">
+            <th id="name">
+                Name
+            </th>
+            <th id="country">
+                Country
+            </th>
+            <th id="city">
+                City
+            </th>
+            <th id="stars">
+                Stars
+            </th>
+            <th id="brand">
+                Brand
+            </th>
+        </table>
+    </div>
+    <div id="moreInfo">
+        <p class="closeBtn" onclick="closeMoreInfo()">X</p>
+        <ol id="recent"><h3>Last viewed:</h3></ol>
+    </div>
+</body>
+
+</html>
